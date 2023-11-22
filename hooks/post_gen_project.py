@@ -14,7 +14,7 @@ def remove_controllers_folder():
 
 
 def main():
-    {%- if not cookiecutter.use_bootstrap %}
+    {%- if cookiecutter.use_bootstrap %}
     Path("src/styles/app.css").resolve().unlink(){% endif %}
 
     {%- if not cookiecutter.use_bootstrap %}
