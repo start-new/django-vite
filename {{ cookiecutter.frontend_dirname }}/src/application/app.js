@@ -3,7 +3,7 @@ import 'vite/modulepreload-polyfill';
 {%- if cookiecutter.use_bootstrap %}
 
 // Importation of Bootstrap
-import * as bootstrap from 'bootstrap'{% endif %}
+import * as bootstrap from 'bootstrap';{% endif %}
 
 {%- if cookiecutter.use_stimulus %}
 
