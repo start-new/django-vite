@@ -15,8 +15,8 @@
     "postcss": "^8.4.31",
     {%- if cookiecutter.use_stimulus %}
     "stimulus-vite-helpers": "^3.0.1",{% endif %}
-    "vite": "^4.4.11",
-    {%- if cookiecutter.use_stimulus %}
+    "vite": "^4.4.11"
+    {%- if cookiecutter.use_stimulus %},
     "vite-plugin-stimulus-hmr": "^3.0.0"{% endif %}
   }
 }
