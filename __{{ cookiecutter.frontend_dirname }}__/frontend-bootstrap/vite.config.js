@@ -42,7 +42,6 @@ export default defineConfig({
     StimulusHMR()
   {% endif %}],
   publicDir: path.resolve(__dirname, "public/"),
-  root: path.resolve("./src"),
   base: "/static/",
   server: {
     open: false,
