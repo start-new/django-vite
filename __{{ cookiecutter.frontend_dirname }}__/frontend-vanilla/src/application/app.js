@@ -18,5 +18,5 @@ import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start(){% endif %}
 
-// Entry point for SCSS styles
-import "../styles/app.scss";
+// Entry point for CSS styles
+import "../styles/app.css";
