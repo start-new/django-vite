@@ -47,7 +47,7 @@ export default defineConfig({
     open: false,
   },
   build: {
-    outDir: path.resolve(__dirname, "../example/static/"),
+    outDir: path.resolve(__dirname, "../{{ cookiecutter.static_dirpath }}"),
     manifest: true,
     emptyOutDir: true,
     target: "es2015",
