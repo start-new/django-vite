@@ -1,4 +1,4 @@
-// postcss.config.js
+{%- if cookiecutter.use_tailwindcss %}
 module.exports = {
   plugins: {
     "postcss-import": {},
@@ -9,3 +9,9 @@ module.exports = {
     },
   },
 };
+{%- else %}
+module.exports = {
+  plugins: {
+    autoprefixer: {}
+  },
+};{% endif %}
