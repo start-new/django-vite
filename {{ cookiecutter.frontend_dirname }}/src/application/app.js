@@ -19,9 +19,9 @@ window.htmx = htmx;{% endif %}
 {%- if cookiecutter.use_alpinejs %}
 
 // Importation and configuration of Alpine.js
-import Alpine from 'alpinejs'
-window.Alpine = Alpine
-Alpine.start(){% endif %}
+import Alpine from 'alpinejs';
+window.Alpine = Alpine;
+Alpine.start();{% endif %}
 
 {%- if cookiecutter.use_bootstrap %}
 
