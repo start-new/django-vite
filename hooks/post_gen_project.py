@@ -4,6 +4,7 @@ import shutil
 
 def remove_bootstrap_files():
     shutil.rmtree("src/styles/base")
+    Path("src/styles/app.scss").resolve().unlink()
 
 def remove_tailwind_files():
     Path("tailwind.config.js").resolve().unlink()
@@ -13,6 +14,9 @@ def remove_controllers_folder():
 
 
 def main():
+    {%- if not cookiecutter.use_bootstrap %}
+    Path("src/styles/app.css").resolve().unlink(){% endif %}
+
     {%- if not cookiecutter.use_bootstrap %}
     remove_bootstrap_files(){% endif %}
 
