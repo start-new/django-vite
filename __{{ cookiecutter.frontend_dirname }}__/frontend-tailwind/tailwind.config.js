@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.js",
     "../.venv/**/crispy_tailwind/**/*.html",
-    "../example/**/*.html",
+    "../**/*.html",
   ],
   theme: {
     extend: {},
