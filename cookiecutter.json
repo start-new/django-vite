@@ -1,0 +1,20 @@
+{
+    "django_project_name": "example",
+    "frontend_dirname": "frontend",
+    "static_dirpath": "{{ cookiecutter.django_project_name }}/static/",
+    "use_stimulus": false,
+    "use_htmx": false,
+    "use_alpinejs": false,
+    "use_tailwindcss": false,
+    "use_bootstrap": false,
+    "__prompts__": {
+        "django_project_name": "Python identifyer of your Django project",
+        "frontend_dirname": "Name of your frontend folder (lowercase, one word)",
+        "static_dirpath": "Path to your static directory from the project root",
+        "use_stimulus": "Would you like to use the Stimulus javascript library ?",
+        "use_htmx": "Would you like to use HTMX in your project ?",
+        "use_alpinejs": "Would you like to use Alpine.js in your project ?",
+        "use_tailwindcss": "Would you like to use Tailwind for your CSS ?",
+        "use_bootstrap": "Would you like to use Bootstrap 5 for your CSS ?"
+    }
+}
