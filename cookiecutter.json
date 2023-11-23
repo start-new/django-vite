@@ -16,5 +16,13 @@
         "use_alpinejs": "Would you like to use Alpine.js in your project ?",
         "use_tailwindcss": "Would you like to use Tailwind for your CSS ?",
         "use_bootstrap": "Would you like to use Bootstrap 5 for your CSS ?"
+    },
+    "_jinja2_env_vars": {
+        "block_start_string": "{{%",
+        "block_end_string": "%}}",
+        "variable_start_string": "{{{",
+        "variable_end_string": "}}}",
+        "comment_start_string": "{{#",
+        "comment_end_string": "#}}"
     }
 }

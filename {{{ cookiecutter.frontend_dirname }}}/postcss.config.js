@@ -1,4 +1,4 @@
-{%- if cookiecutter.use_tailwindcss -%}
+{{%- if cookiecutter.use_tailwindcss -%}}
 module.exports = {
   plugins: {
     "postcss-import": {},
@@ -9,9 +9,9 @@ module.exports = {
     },
   },
 };
-{%- else -%}
+{{%- else -%}}
 module.exports = {
   plugins: {
     autoprefixer: {}
   },
-};{% endif %}
+};{{% endif %}}

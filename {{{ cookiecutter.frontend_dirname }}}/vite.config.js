@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import path from "path";
 import { glob } from "glob";
-{%- if cookiecutter.use_stimulus %}
-import StimulusHMR from 'vite-plugin-stimulus-hmr';{% endif %}
+{{%- if cookiecutter.use_stimulus %}}
+import StimulusHMR from 'vite-plugin-stimulus-hmr';{{% endif %}}
 
 /**
  * Return an objet for vite rollup$Options input detecting all files in
@@ -38,16 +38,16 @@ const assetFileNames = (assetInfo) => {
 // Configuration entry point
 export default defineConfig({
   plugins: [
-    {%- if cookiecutter.use_stimulus %}
+    {{%- if cookiecutter.use_stimulus %}}
     StimulusHMR()
-  {% endif %}],
+  {{% endif %}}],
   publicDir: path.resolve(__dirname, "public/"),
   base: "/static/",
   server: {
     open: false,
   },
   build: {
-    outDir: path.resolve(__dirname, "../{{ cookiecutter.static_dirpath }}"),
+    outDir: path.resolve(__dirname, "../{{{ cookiecutter.static_dirpath }}}"),
     manifest: true,
     emptyOutDir: true,
     target: "es2015",
